@@ -1,5 +1,4 @@
 import { Component, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { HttpClient , HttpClientModule } from '@angular/common/http';
 import { UserDataService } from '../../Services/user-data.service';
 import { CommonModule } from '@angular/common';
@@ -13,6 +12,7 @@ import { User } from '../../User';
   styleUrl: './comp1.component.css'
 })
 export class Comp1Component {
+  load=false;
   UsersArray: User[] = [];
   title = 'app-comp1';
   httpclt = inject(HttpClient);
@@ -29,7 +29,8 @@ export class Comp1Component {
       {
         this.udservice.addtoArray(data);
         this.UsersArray = data;
-        console.log(data);
+        // console.log(data);
+        this.load=true;
       });
     }
 }

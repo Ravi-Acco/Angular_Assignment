@@ -20,6 +20,7 @@ export class Comp2Component {
   title = 'app-comp2';
   httpclt = inject(HttpClient);
   udservice = inject(UserDataService);
+  load=false;
 
     ngOnInit():void
     {
@@ -32,13 +33,14 @@ export class Comp2Component {
       {
         this.udservice.addtoArray(data);
         this.UsersArray = data;
-        console.log(data);
+        // console.log(data);
+        this.load=true;
       });
     }
 
-    // ngOnDestroy() {
-    //   this.unsubscribe();
-    // }
+    constructor(){
+      this.getDatafromApi();
+    }
 }
 
 

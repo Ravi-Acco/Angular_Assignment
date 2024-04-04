@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { UserDataService } from '../../Services/user-data.service';
 import { User } from '../../User';
 import { HttpClient } from "@angular/common/http";
 import { CommonModule } from '@angular/common';
@@ -20,14 +19,6 @@ export class Comp3Component {
   httpclt = inject(HttpClient);
   load= false;
   
-  // userDataService=inject(UserDataService);
-  // title = 'app-comp3';
-  // udservice = inject(UserDataService);
-
-    // ngOnInit():void
-    // {
-      
-    // }
 
   getDatafromApi(id:Number): void
     {
