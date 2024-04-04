@@ -1,0 +1,37 @@
+<!-- <p>comp1 works!</p> -->
+
+<h3 class="container">List of data available</h3>
+<br>
+<!-- <div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div> -->
+
+
+
+<div class="list-group container">
+  <ul *ngFor="let tmp of UsersArray">
+    <a routerLink="userCard" href="userCard" class="list-group-item list-group-item-action list-group-item-danger">{{tmp.name}}</a>
+  </ul>
+</div>
+

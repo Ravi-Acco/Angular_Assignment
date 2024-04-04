@@ -1,0 +1,32 @@
+.myContainer{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* cursor: pointer; */
+    background-color: grey;
+}
+
+.btn{
+    background-color: aqua;
+    color: gray;
+}
+.btn:hover{
+    color: white;
+    background-color: gray;
+}
+
+.card-title{
+    font-weight: normal;
+    font-size: medium;
+}
+.card-header{
+    /* font-weight: bold; */
+    font-size: larger;
+    color: aqua;
+}
+
+h3{
+    text-align: center;
+    color: gray;
+    font-style: italic;
+}

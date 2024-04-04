@@ -1,0 +1,16 @@
+
+<h3>These are the User cards</h3>
+
+
+<div class="myContainer">
+    <div *ngFor="let temp of UsersArray" class="card text-white bg-primary m-3 " style="max-width: 18rem;">
+        <div class="card-header">{{temp.name}}</div>
+        <div class="card-body">
+        <h5 class="card-title">Email: {{temp.email}}</h5>
+        <!-- <p class="card-text">Phone: {{temp.phone}} <br> Website: {{temp.website}}</p> -->
+        <a [routerLink]="['/userDetails',temp.id]" class="btn btn-primary">Know More</a>
+        </div>
+    </div>
+</div>
+
+
