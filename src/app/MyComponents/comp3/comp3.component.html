@@ -58,7 +58,10 @@
                 <p class="mb-0">Address</p>
               </div>
               <div class="col-sm-9">
-                  {{user?.address}}
+                  Street: {{user?.address?.street}} <br>
+                  Suite: {{user?.address?.suite}} <br>
+                  City: {{user?.address?.city}} <br>
+                  Zipcode: {{user?.address?.zipcode}}
               </div>
             </div>
             <hr>
@@ -67,7 +70,11 @@
                 <p class="mb-0">Company</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-muted mb-0">{{user?.company}}</p>
+                <p class="text-muted mb-0">
+                  Name: {{user?.company?.name}} <br>
+                  CatchPhrase: {{user?.company?.catchPhrase}} <br>
+                  BS: {{user?.company?.bs}} <br>
+                </p>
               </div>
             </div>
           </div>
